@@ -1,0 +1,78 @@
+:root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5f7fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); /* Hiệu ứng đổ bóng */
+}
+
+header { text-align: center; margin-bottom: 30px; }
+
+.form-group { margin-bottom: 15px; }
+
+label { display: block; font-weight: bold; margin-bottom: 5px; }
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button#generateBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Hiệu ứng chuyển cảnh */
+}
+
+button#generateBtn:hover {
+    background-color: #357abd;
+    transform: translateY(-2px); /* Nhích nhẹ khi di chuột */
+}
+
+.result-box {
+    margin-top: 20px;
+    background: var(--secondary-color);
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.content-wrapper { display: flex; justify-content: space-between; align-items: flex-start; }
+
+.copy-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Responsive cho điện thoại */
+@media (max-width: 600px) {
+    .container { padding: 15px; }
+}
