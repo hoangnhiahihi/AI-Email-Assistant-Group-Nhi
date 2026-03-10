@@ -20,7 +20,7 @@
 
 \## 🔗 Đường dẫn triển khai
 
-\- \*\*Vercel Link:\*\* \[ai-email-assistant-group-cxt47zi9z-hoangnhiahihis-projects.vercel.app]
+\- \*\*Vercel Link:\*\* \[https://ai-email-assistant-group-nhi.vercel.app]
 
 \- \*\*GitHub Repo:\*\* \[Dán link github của Nhi vào đây]
 
