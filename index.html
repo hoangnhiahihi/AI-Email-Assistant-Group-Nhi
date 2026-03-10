@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Email Assistant - Sales & CS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📧 Trợ Lý Email AI</h1>
+            <p>Tạo bản nháp email chuyên nghiệp trong giây lát</p>
+        </header>
+
+        <section class="input-section">
+            <div class="form-group">
+                <label for="emailGoal">Mục tiêu email:</label>
+                <select id="emailGoal">
+                    <option value="Giới thiệu sản phẩm mới">Giới thiệu sản phẩm mới</option>
+                    <option value="Cảm ơn khách hàng">Cảm ơn khách hàng</option>
+                    <option value="Nhắc nhở thanh toán">Nhắc nhở thanh toán</option>
+                    <option value="Giải quyết khiếu nại">Giải quyết khiếu nại</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="customerName">Tên khách hàng:</label>
+                <input type="text" id="customerName" placeholder="Ví dụ: Anh Hoàng, Chị Nhi...">
+            </div>
+
+            <div class="form-group">
+                <label for="productName">Tên sản phẩm/dịch vụ:</label>
+                <input type="text" id="productName" placeholder="Ví dụ: Khóa học Web, Phần mềm kế toán...">
+            </div>
+
+            <div class="form-group">
+                <label for="details">Thông tin cụ thể cần truyền tải:</label>
+                <textarea id="details" rows="4" placeholder="Ví dụ: Giảm giá 20% cho khách hàng cũ, hạn chót ngày 15/3..."></textarea>
+            </div>
+
+            <button id="generateBtn">Tạo Bản Nháp Email</button>
+        </section>
+
+        <section class="output-section" id="outputArea" style="display: none;">
+            <div class="result-box">
+                <h3>Tiêu đề:</h3>
+                <div class="content-wrapper">
+                    <p id="emailSubject"></p>
+                    <button class="copy-btn" onclick="copyText('emailSubject')">Sao chép</button>
+                </div>
+            </div>
+
+            <div class="result-box">
+                <h3>Nội dung:</h3>
+                <div class="content-wrapper">
+                    <p id="emailBody"></p>
+                    <button class="copy-btn" onclick="copyText('emailBody')">Sao chép</button>
+                </div>
+            </div>
+        </section>
+        
+        <div id="loading" style="display: none;">Đang kết nối AI, vui lòng chờ...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
